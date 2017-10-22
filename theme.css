@@ -1,0 +1,26 @@
+	ul{
+		
+		 color:black;
+		 display:inline;
+		 
+		 }
+	ul > a { 
+	text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;}
+	
+	a:hover{text-decoration: none;
+}
+	body{background-color:#FFE5B4;}
+	
+	.user-msg	{color:red;
+				font-weight:bold;
+				font-size:larger;}
+	
+	img { max-width: 300px;}
+
+  
+	  
+	  
