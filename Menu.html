@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<title> Menú </title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/theme.css" />
+
+</head>
+<body class="container">
+
+	<?php
+        // Control de Acceso no autorizado
+        require '../Utility/validation.php';
+        session_start();
+        validateSession();
+        //echo $_SESSION['Auth'];    
+        //echo $_SESSION['email'];
+        //echo $_SESSION['AuthTime'];
+        //echo $_SESSION['counterAccess'];
+        //echo $_SESSION['ip'];
+        ?>
+    
+        <header class="jumbotron">
+	<div class="row">
+	<img src="img/maps.jpg" alt="Registro de Carros" title="Registro de Carros" class="col-md-2"/>
+	<h1 class="col-md-offset-4">PALCOM GPS</h1>
+	</div>
+	</header>
+	<br />
+        
+	<article class="row">
+
+	<div class="col-sm-3">
+		<a href="registerCar.php" class="btn">
+		<img src="img/cars.jpg" alt="Registro de Carros" title="Registro de Carros" class="col-sm-10"/>
+		</a>
+		<br />
+		<a href="registerCar.php" class="btn"> Registro de Carros</a>
+	</div>
+
+	<div class="col-sm-3">
+		<a href="mapaPosition.php" class="btn">
+		<img src="img/maps.jpg" alt="Localización de Vehiculos" title="Localización de Vehiculos" class="col-sm-10"/>
+		</a>
+		<br />
+		<a href="mapaPosition.php" class="btn" > Localización de Vehiculos</a>
+	</div>
+
+	<div class="col-sm-3">
+		<a href="facturacion.php" class="btn">
+		<img src="img/invoices.jpg" alt="Facturación y Saldos" title="Facturación y Saldos" class="col-sm-10"/>
+		</a>
+		<br />
+		<a href="facturacion.php" class="btn"> Facturación y Saldos</a>
+	</div>
+
+	<div class="col-sm-3">
+		<a href="mapaHist.php" class="btn">
+		<img src="img/bitacora.jpg" alt="Recorridos, Consultas y/o Historicos" title="Recorridos, Consultas y/o Historicos" class="col-sm-10"/>
+		</a>
+		<br />
+		<a href="mapaHist.php" class="btn"> Recorridos, Consultas y/o Historicos</a>
+		</div>
+		<br />
+		<br />
+	</article>
+
+	
+	<h4 class="row">Derechos de Autor</h4>
+	<footer class="col-sm-12">
+		<details>
+		<summary>Copyright, las imagenes mostrado en este website son de libre distribución y pertenecen a los sitios web listados:</summary>
+		<p>Usuario: momentbloom en https://www.vecteezy.com/vector-art/90280-vector-car-aerial-view-pack ,presente en la página web el 09-12-2016 </p>
+		<p>Usuario: zhaolifang en https://www.vecteezy.com/vector-art/92889-hipster-vector-silhouettes ,presente en la página web el 09-12-2016 </p>
+		<p>OpenStreetMap project data at https://en.wikipedia.org/wiki/Wikipedia:WikiProject_OpenStreetMap ,presente en la página web el 09-12-2016</p>
+		<p>Publicado en https://de.wikipedia.org/wiki/Rechnung ,presente en la página web el 09-12-2016</p>
+		<p>Publicado en http://masdehistoria.blogspot.com/2009/03/cuaderno-de-bitacora.html ,presente en la página web el 09-12-2016</p>
+		</details>
+	</footer>
+</body>
